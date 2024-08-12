@@ -1,19 +1,106 @@
 <html>
 	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 		<style>
+			html {
+				font-family: 'Montserrat', sans-serif;
+			}
+			
 			body {
-				min-height: 100vh;
-				display: flex;
 				background-color: #24252b;
+				color: #2edbdb;
+			}
+
+			header {
+				display: flex;
+				min-height: 100vh;
 				justify-content: center;
 				align-items: center;
 			}
-			h1 {
-				color: #2edbdb;
+
+			.header-left {
+				width: 50%;
+				text-align: center;
+				max-width: 400px;
+			}
+
+			.header-left h2 {
+				font-size: 3.5rem;
+			}
+
+			.header-left p {
+				font-size: 1.2rem;
+			}
+
+			.header-right {
+				width: 50%;
+				max-width: 400px;
+			}
+
+			.header-right a {
+				color: white;
+				font-size: 1.2rem;
+				display: block;
+				margin-top: 20px;
+			}
+
+			.divider {
+				width: 1px;
+				height: 500px;
+				margin: 0 10%;
+				background-color: white;
+			}
+			@media screen and (max-width: 768px) {
+				.header-left {
+					width: 100%;
+					max-width: 90%;
+				}
+
+				.header-left h2 {
+					font-size: 2rem;
+				}
+
+				.header-left p {
+					font-size: 1rem;
+				}
+				
+				header {
+					flex-direction: column;
+				}
+
+				.header-right {
+					width: 100%;
+					max-width: 90%;
+				}
+
+				.header-right a {
+					text-align: center;
+					font-size: 1rem;
+				}
+
+				.divider {
+					width: 80%;
+					height: 1px;
+					margin: 10% 0;
+				}
 			}
 		</style>
 	</head>
 	<body>
-		<h1>Hmmmm...</h1>
+		<header>
+			<div class="header-left">
+				<h2>Adam Lind</h2>
+				<p>Tech Lead | Fullstack Developer</p>
+				<p>.NET | Nodejs | Vue | React</p>
+			</div>
+			<div class="divider"></div>
+			<div class="header-right">
+				<a href="https://www.linkedin.com/in/adaml1nd/">Linkedin</a>
+				<a href="https://github.com/Naeralys/">Github</a>
+			</div>
+		</header>
 	</body>
 </html>
